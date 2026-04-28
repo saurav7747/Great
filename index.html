@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXUS — by Saurav</title>
+  <meta name="description" content="NEXUS by Saurav — Futuristic tech, education, and skill development platform." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-trail-container" id="cursorTrail"></div>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="pre-logo">NEXUS</div>
+      <div class="pre-bar"><div class="pre-fill" id="preFill"></div></div>
+      <div class="pre-text" id="preText">INITIALIZING SYSTEM...</div>
+    </div>
+    <div class="preloader-grid"></div>
+  </div>
+
+  <!-- FLOATING NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">NX<span>.</span></div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#terminal" class="nav-link" data-section="terminal">Terminal</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====================== HERO ====================== -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content" id="heroContent">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> System Online
+      </div>
+      <h1 class="hero-title" id="heroTitle">
+        <span class="title-line">NEX</span><span class="title-line accent">US</span>
+      </h1>
+      <p class="hero-sub">Built by <span class="glitch" data-text="Saurav">Saurav</span></p>
+      <p class="hero-tagline" id="heroTagline"></p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years XP</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Students</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Ideas</span></div>
+      </div>
+      <div class="hero-cta">
+        <a href="#about" class="btn btn-primary magnetic">Explore NEXUS</a>
+        <a href="#contact" class="btn btn-ghost magnetic">Connect</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ====================== LIVE STATUS ====================== -->
+  <div class="status-bar">
+    <div class="status-inner">
+      <div class="status-item"><span class="dot green"></span> Available for Projects</div>
+      <div class="status-item"><span class="dot blue"></span> Founder: Saurav</div>
+      <div class="status-item"><span class="dot purple"></span> Based in India 🇮🇳</div>
+      <div class="status-item"><span class="dot green"></span> Classes: Coming Soon</div>
+    </div>
+  </div>
+
+  <!-- ====================== ABOUT ====================== -->
+  <section class="section about-section" id="about">
+    <div class="section-label">// 01 — ABOUT</div>
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="avatar-frame">
+          <div class="avatar-ring r1"></div>
+          <div class="avatar-ring r2"></div>
+          <div class="avatar-ring r3"></div>
+          <div class="avatar-core">
+            <span class="avatar-init">S</span>
+          </div>
+          <div class="avatar-label">SAURAV // FOUNDER</div>
+        </div>
+      </div>
+      <div class="about-text reveal-right">
+        <h2 class="section-title">The Mind Behind <span class="neon">NEXUS</span></h2>
+        <p class="about-p">I'm <strong>Saurav</strong> — a tech educator, ethical hacker, and digital creator based in India. NEXUS is my vision: a next-generation platform where technology meets education, and skills become superpowers.</p>
+        <p class="about-p">NEXUS isn't just a brand — it's a <span class="neon">movement</span>. I believe every student deserves world-class tech education, whether it's web development, cybersecurity, or digital freelancing.</p>
+        <div class="about-tags">
+          <span class="tag">Ethical Hacking</span>
+          <span class="tag">Web Dev</span>
+          <span class="tag">Tech Education</span>
+          <span class="tag">Freelancing</span>
+          <span class="tag">Cyberpunk</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== SERVICES ====================== -->
+  <section class="section services-section" id="services">
+    <div class="section-label">// 02 — SERVICES</div>
+    <h2 class="section-title center reveal-up">What NEXUS <span class="neon">Offers</span></h2>
+    <div class="services-grid">
+      <div class="service-card reveal-up" style="--d:0.1s">
+        <div class="card-glow"></div>
+        <div class="service-icon">💻</div>
+        <h3>Computer Classes</h3>
+        <p>From basics to advanced — learn computing, MS Office, internet skills, and digital literacy designed for real-world use.</p>
+        <div class="card-tag">Beginner Friendly</div>
+      </div>
+      <div class="service-card reveal-up" style="--d:0.2s">
+        <div class="card-glow"></div>
+        <div class="service-icon">🛡️</div>
+        <h3>Ethical Hacking</h3>
+        <p>Master cybersecurity fundamentals, penetration testing, network security, and OSINT with hands-on real-world training.</p>
+        <div class="card-tag">Advanced Track</div>
+      </div>
+      <div class="service-card reveal-up" style="--d:0.3s">
+        <div class="card-glow"></div>
+        <div class="service-icon">🚀</div>
+        <h3>Skill Development</h3>
+        <p>Build freelancing skills — web design, branding, content creation, and digital marketing to earn online from anywhere.</p>
+        <div class="card-tag">Career Ready</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== SKILLS ====================== -->
+  <section class="section skills-section" id="skills">
+    <div class="section-label">// 03 — SKILLS</div>
+    <h2 class="section-title center reveal-up">Core <span class="neon">Capabilities</span></h2>
+    <div class="skills-grid">
+      <div class="skill-item reveal-up" style="--d:0.05s">
+        <div class="skill-circle" data-pct="88">
+          <svg viewBox="0 0 120 120">
+            <circle class="track" cx="60" cy="60" r="52"/>
+            <circle class="fill" cx="60" cy="60" r="52" data-pct="88"/>
+          </svg>
+          <div class="skill-pct">0%</div>
+        </div>
+        <div class="skill-name">Web Dev</div>
+      </div>
+      <div class="skill-item reveal-up" style="--d:0.1s">
+        <div class="skill-circle" data-pct="82">
+          <svg viewBox="0 0 120 120">
+            <circle class="track" cx="60" cy="60" r="52"/>
+            <circle class="fill" cx="60" cy="60" r="52" data-pct="82"/>
+          </svg>
+          <div class="skill-pct">0%</div>
+        </div>
+        <div class="skill-name">Ethical Hacking</div>
+      </div>
+      <div class="skill-item reveal-up" style="--d:0.15s">
+        <div class="skill-circle" data-pct="90">
+          <svg viewBox="0 0 120 120">
+            <circle class="track" cx="60" cy="60" r="52"/>
+            <circle class="fill" cx="60" cy="60" r="52" data-pct="90"/>
+          </svg>
+          <div class="skill-pct">0%</div>
+        </div>
+        <div class="skill-name">Teaching</div>
+      </div>
+      <div class="skill-item reveal-up" style="--d:0.2s">
+        <div class="skill-circle" data-pct="78">
+          <svg viewBox="0 0 120 120">
+            <circle class="track" cx="60" cy="60" r="52"/>
+            <circle class="fill" cx="60" cy="60" r="52" data-pct="78"/>
+          </svg>
+          <div class="skill-pct">0%</div>
+        </div>
+        <div class="skill-name">Branding</div>
+      </div>
+      <div class="skill-item reveal-up" style="--d:0.25s">
+        <div class="skill-circle" data-pct="85">
+          <svg viewBox="0 0 120 120">
+            <circle class="track" cx="60" cy="60" r="52"/>
+            <circle class="fill" cx="60" cy="60" r="52" data-pct="85"/>
+          </svg>
+          <div class="skill-pct">0%</div>
+        </div>
+        <div class="skill-name">Freelancing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PROJECTS ====================== -->
+  <section class="section projects-section" id="projects">
+    <div class="section-label">// 04 — PROJECTS</div>
+    <h2 class="section-title center reveal-up">Featured <span class="neon">Work</span></h2>
+    <div class="projects-grid">
+      <div class="project-card reveal-up tilt-card" style="--d:0.1s">
+        <div class="proj-overlay"></div>
+        <div class="proj-num">01</div>
+        <div class="proj-info">
+          <h3>NEXUS Academy</h3>
+          <p>Full-stack e-learning platform for tech education with live sessions, quizzes, and progress tracking.</p>
+          <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </div>
+        <div class="proj-arrow">→</div>
+      </div>
+      <div class="project-card reveal-up tilt-card" style="--d:0.2s">
+        <div class="proj-overlay"></div>
+        <div class="proj-num">02</div>
+        <div class="proj-info">
+          <h3>CyberShield Toolkit</h3>
+          <p>Personal ethical hacking toolkit with OSINT scripts, network scanners, and vulnerability checkers.</p>
+          <div class="proj-tags"><span>Python</span><span>Linux</span><span>Security</span></div>
+        </div>
+        <div class="proj-arrow">→</div>
+      </div>
+      <div class="project-card reveal-up tilt-card" style="--d:0.3s">
+        <div class="proj-overlay"></div>
+        <div class="proj-num">03</div>
+        <div class="proj-info">
+          <h3>Brand Studio</h3>
+          <p>Digital branding service offering logo design, social media kits, and complete brand identity packages.</p>
+          <div class="proj-tags"><span>Design</span><span>Branding</span><span>Freelance</span></div>
+        </div>
+        <div class="proj-arrow">→</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== COMING SOON ====================== -->
+  <section class="section coming-section" id="coming">
+    <div class="section-label">// 05 — COMING SOON</div>
+    <h2 class="section-title center reveal-up">What's <span class="neon">Next</span></h2>
+    <div class="coming-grid">
+      <div class="coming-card reveal-up" style="--d:0.1s">
+        <div class="coming-glow"></div>
+        <div class="coming-icon">🖥️</div>
+        <h3>Computer Classes</h3>
+        <p>Offline + online batch classes for students and beginners. Real skills, real results.</p>
+        <div class="coming-bar"><div class="coming-fill" style="--pct:75%"></div></div>
+        <span class="coming-status">75% Ready</span>
+      </div>
+      <div class="coming-card reveal-up" style="--d:0.2s">
+        <div class="coming-glow"></div>
+        <div class="coming-icon">🔐</div>
+        <h3>Ethical Hacking Course</h3>
+        <p>Complete structured course with modules, labs, and certification — for the future cyberwarriors.</p>
+        <div class="coming-bar"><div class="coming-fill" style="--pct:55%"></div></div>
+        <span class="coming-status">55% Ready</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== TERMINAL ====================== -->
+  <section class="section terminal-section" id="terminal">
+    <div class="section-label">// 06 — TERMINAL</div>
+    <h2 class="section-title center reveal-up"><span class="neon">Hack</span> the Interface</h2>
+    <p class="terminal-hint reveal-up">Type <kbd>help</kbd> to see all commands</p>
+    <div class="terminal-window reveal-up">
+      <div class="terminal-header">
+        <div class="t-btn t-red"></div>
+        <div class="t-btn t-yellow"></div>
+        <div class="t-btn t-green"></div>
+        <span class="t-title">nexus@system:~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="t-line"><span class="t-prompt">nexus@system:~$</span> <span class="t-cmd">system --boot</span></div>
+        <div class="t-line t-output">NEXUS v2.0.77 — Initializing...</div>
+        <div class="t-line t-output success">✔ All systems operational. Welcome, operative.</div>
+        <div class="t-line t-output muted">Type 'help' to see available commands.</div>
+      </div>
+      <div class="terminal-input-row">
+        <span class="t-prompt-inline">nexus@system:~$</span>
+        <input type="text" class="t-input" id="terminalInput" placeholder="enter command..." autocomplete="off" spellcheck="false" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CONTACT ====================== -->
+  <section class="section contact-section" id="contact">
+    <div class="section-label">// 07 — CONTACT</div>
+    <h2 class="section-title center reveal-up">Let's <span class="neon">Connect</span></h2>
+    <div class="contact-grid">
+      <!-- FORM -->
+      <div class="contact-form-wrap reveal-left">
+        <form class="contact-form" id="contactForm" onsubmit="return false;">
+          <div class="form-group">
+            <input type="text" id="fname" placeholder=" " required />
+            <label for="fname">Your Name</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="femail" placeholder=" " required />
+            <label for="femail">Email Address</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <select id="finterest" required>
+              <option value="" disabled selected>Select Interest</option>
+              <option value="Computer Classes">💻 Computer Classes</option>
+              <option value="Ethical Hacking">🛡️ Ethical Hacking</option>
+              <option value="Freelancing">🚀 Freelancing</option>
+              <option value="Other">✨ Other</option>
+            </select>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <textarea id="fmessage" rows="4" placeholder=" " required></textarea>
+            <label for="fmessage">Your Message</label>
+            <div class="form-line"></div>
+          </div>
+          <button type="submit" class="btn btn-primary magnetic" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon">🚀</span>
+          </button>
+          <div class="form-success" id="formSuccess">Message Sent 🚀 I'll respond soon!</div>
+        </form>
+      </div>
+      <!-- DIRECT CONTACT -->
+      <div class="contact-info reveal-right">
+        <div class="info-card">
+          <div class="info-label">DIRECT REACH</div>
+          <a href="mailto:sauravsimariya4321@gmail.com" class="contact-link magnetic">
+            <span class="contact-icon">📧</span>
+            <div>
+              <div class="cl-label">Email</div>
+              <div class="cl-val">sauravsimariya4321@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://instagram.com/indian_zord" target="_blank" class="contact-link magnetic">
+            <span class="contact-icon">📸</span>
+            <div>
+              <div class="cl-label">Instagram</div>
+              <div class="cl-val">@indian_zord</div>
+            </div>
+          </a>
+          <div class="avail-badge">
+            <span class="dot green pulse"></span>
+            <div>
+              <div class="avail-title">Available for Projects</div>
+              <div class="avail-sub">Response within 24 hours</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">NEXUS</div>
+      <p class="footer-by">Crafted with 🔥 by <span class="neon">Saurav</span></p>
+      <p class="footer-copy">© 2025 NEXUS. All rights reserved.</p>
+    </div>
+    <div class="footer-grid"></div>
+  </footer>
+
+  <!-- LIVE CHAT WIDGET -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-box" id="chatBox">
+      <div class="chat-header">
+        <div class="chat-avatar">S</div>
+        <div>
+          <div class="chat-name">Saurav</div>
+          <div class="chat-status"><span class="dot green"></span> Online</div>
+        </div>
+        <button class="chat-close" id="chatClose">✕</button>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-msg bot">Hi, I'm Saurav 👨‍💻 How can I help you?</div>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="Type a message..." />
+        <button id="chatSend">→</button>
+      </div>
+    </div>
+    <button class="chat-toggle" id="chatToggle">
+      <span class="chat-icon">💬</span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
